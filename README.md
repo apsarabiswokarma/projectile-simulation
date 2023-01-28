@@ -27,7 +27,7 @@ PURPLE = (155, 38, 182)
 AQUA = (0, 249, 182)
 
 COLORS = [RED, GREEN, BLUE, ORANGE, YELLOW, PURPLE]
-
+```
 This code defines several variables that hold RGB color values. These values are used to create different colors in an image or display.
 
 BLACK, WHITE, RED, GREEN, BLUE, ORANGE, YELLOW, PURPLE, and AQUA are all variables that hold a tuple of 3 integers. 
@@ -37,4 +37,28 @@ For example, the value of the variable RED is (252, 91, 122) which represents a 
 The variable COLORS is also a list, but it contains the variables RED, GREEN, BLUE, ORANGE, YELLOW, and PURPLE. 
 These are the color constants that are being used in the code
 
+```python
+pygame.init()
+SCREEN = WIDTH, HEIGHT = 288, 512
+
+info = pygame.display.Info()
+width = info.current_w
+height = info.current_h
+
+if width >= height:
+    win = pygame.display.set_mode(SCREEN, pygame.NOFRAME)
+else:
+    win = pygame.display.set_mode(
+        SCREEN, pygame.NOFRAME | pygame.SCALED | pygame.FULLSCREEN)
+
+clock = pygame.time.Clock()
+FPS = 60
 ```
+This code initializes the Pygame library and creates a window with the dimensions 288x512.
+It then uses the pygame.display.Info() function to get the current width and height of the screen. 
+If the width is greater than or equal to the height, the window is created without a frame using the pygame.NOFRAME flag.
+Otherwise, the window is created with the pygame.NOFRAME, pygame.SCALED, and pygame.
+FULLSCREEN flags, which removes the frame, scales the window to fit the screen, and sets the window to fullscreen mode.
+The code also creates a clock object with a target framerate of 60 FPS.
+
+
