@@ -13,3 +13,28 @@ The getAngleFromGradient() function takes in the gradient of a line and returns 
 The getAngle() function takes in a point (pos) and an origin point, and calculates the angle (in degrees) that the line from the origin to the point makes with the positive x-axis.
 
 The getPosOnCircumeference() function takes in an angle (in degrees) and an origin point, and returns the coordinates of a point on the circle's circumference that is at the given angle from the origin. This is done by converting the angle to radians, and then using the sine and cosine functions to calculate the x and y coordinates of the point.
+
+```python
+
+BLACK = (18, 18, 18)
+WHITE = (217, 217, 217)
+RED = (252, 91, 122)
+GREEN = (29, 161, 16)
+BLUE = (78, 193, 246)
+ORANGE = (252, 76, 2)
+YELLOW = (254, 221, 0)
+PURPLE = (155, 38, 182)
+AQUA = (0, 249, 182)
+
+COLORS = [RED, GREEN, BLUE, ORANGE, YELLOW, PURPLE]
+
+This code defines several variables that hold RGB color values. These values are used to create different colors in an image or display.
+
+BLACK, WHITE, RED, GREEN, BLUE, ORANGE, YELLOW, PURPLE, and AQUA are all variables that hold a tuple of 3 integers. 
+These integers represent the red, green, and blue components of the color respectively, and range from 0-255.
+For example, the value of the variable RED is (252, 91, 122) which represents a reddish color.
+
+The variable COLORS is also a list, but it contains the variables RED, GREEN, BLUE, ORANGE, YELLOW, and PURPLE. 
+These are the color constants that are being used in the code
+
+```
