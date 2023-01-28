@@ -4,11 +4,12 @@ import math
 import random
 import pygame
 
-from functions import *
+# importing all the functions that have been defined in the file "functions.py" into the current script or module
 
+from functions import *   
 pygame.init()
+# creates a window with the dimensions 288x512.
 SCREEN = WIDTH, HEIGHT = 288, 512
-
 info = pygame.display.Info()
 width = info.current_w
 height = info.current_h
