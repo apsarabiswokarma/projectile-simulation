@@ -43,7 +43,7 @@ radius = 250
 u = 50
 g = 9.8
 
-
+#sinple base class for visible game object
 class Projectile(pygame.sprite.Sprite):
 
   def __init__(self, u, theta):
