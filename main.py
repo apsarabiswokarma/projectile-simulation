@@ -46,6 +46,7 @@ g = 9.8
 #sinple base class for visible game object
 class Projectile(pygame.sprite.Sprite):
 
+#allows the class to initialize attribute of the class
   def __init__(self, u, theta):
     super(Projectile, self).__init__()
 
